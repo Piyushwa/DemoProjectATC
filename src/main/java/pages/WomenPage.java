@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import seleniumlayer.Driverclass;
 
-public class WomenPage extends Driverclass {
+	public class WomenPage extends Driverclass {
 
 	WebDriver WomenPagedriver;
 
@@ -78,7 +78,7 @@ public class WomenPage extends Driverclass {
 
 		WebElement continueShopping = WomenPagedriver.findElement(By.xpath("//span[@title='Continue shopping']"));
 
-		clickWebelement(continueShopping, "continueShopping");
+		safeJavaScriptClick(continueShopping);
 
 		WebElement Summerdressfromcart = WomenPagedriver.findElement(By.xpath("//*[@id='columns']/div[1]/a[4]"));
 
